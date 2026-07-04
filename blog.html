@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상수 가라오케 블로그 — 진짜를 찾는 자의 기록</title>
+    <meta name="description" content="상수 가라오케의 화려한 조명 뒤에 감춰진 본질을 편집적 시선으로 파헤친다. 단 하나의 진짜 리스트. 전화 010-6279-0862.">
+    <meta name="keywords" content="상수 가라오케, 상수 가라오케 TOP5, 상수 노래방, 홍대 가라오케, 상수역 가라오케, 프리미엄 가라오케, 상수 술집, 상수 가라오케 블로그">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <link rel="canonical" href="https://t3b08-ss-karaoke-top5-1.vercel.app/blog">
+    <meta property="og:title" content="상수 가라오케 블로그 — 화려함 뒤에 감춰진 진실">
+    <meta property="og:description" content="화려함에 속지 마라. 상수 가라오케의 본질을 원한다면 이 글을 읽어라. 010-6279-0862">
+    <meta property="og:type" content="article">
+    <style>
+        /* RESET */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #d4af37;
+        }
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.1;
+            margin-bottom: 1.2rem;
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            border-left: 4px solid #d4af37;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+            color: #c0c0c0;
+        }
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            transition: border-color 0.3s ease, color 0.3s ease;
+        }
+        a:hover {
+            color: #f0d060;
+            border-bottom-color: #f0d060;
+        }
+        strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+        em {
+            font-style: italic;
+            color: #d4af37;
+        }
+        /* DROP CAP */
+        .drop-cap::first-letter {
+            font-size: 3.8rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.6rem;
+            margin-top: 0.2rem;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #d4af37;
+            font-weight: 700;
+        }
+        /* LAYOUT */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 1rem 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #d4af37;
+            border-bottom: none;
+            letter-spacing: 0.05em;
+        }
+        .logo a:hover {
+            color: #f0d060;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        nav a {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #a0a0a0;
+            border-bottom: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #d4af37;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            background: #d4af37;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #d4af37;
+            transition: all 0.3s ease;
+        }
+        .tel-link:hover {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: #d4af37;
+            color: #f0d060;
+        }
+        main {
+            padding-top: 7rem;
+            padding-bottom: 4rem;
+        }
+        .article-hero {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .article-hero .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .article-hero .meta span {
+            color: #d4af37;
+        }
+        .article-body {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        .article-body p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .pull-quote {
+            margin: 2.5rem 0;
+            padding: 2rem 2.5rem;
+            border-left: 4px solid #d4af37;
+            background: rgba(212, 175, 55, 0.05);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #f0d060;
+            line-height: 1.4;
+        }
+        .pull-quote cite {
+            display: block;
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
+            color: #888;
+            font-style: normal;
+        }
+        .highlight-box {
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 1.8rem 2rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        .highlight-box p {
+            margin-bottom: 0.5rem;
+        }
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+        .cta-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(10, 10, 10, 0.8));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            text-align: center;
+            border-radius: 4px;
+        }
+        .cta-section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+        }
+        .cta-section .tel-link {
+            font-size: 1.2rem;
+            padding: 0.8rem 2rem;
+            margin-top: 0.8rem;
+        }
+        footer {
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            padding: 2rem 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.8rem;
+        }
+        footer a {
+            color: #888;
+            border-bottom: none;
+        }
+        footer a:hover {
+            color: #d4af37;
+        }
+        /* RESPONSIVE 768 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.2rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .article-body p {
+                font-size: 1rem;
+            }
+            .pull-quote {
+                font-size: 1.2rem;
+                padding: 1.2rem 1.5rem;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 10, 0.98);
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                gap: 1rem;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            }
+            nav.active {
+                display: flex;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+            .tel-link {
+                margin-top: 0.5rem;
+            }
+            .article-hero .meta {
+                flex-wrap: wrap;
+                gap: 0.8rem;
+            }
+            .cta-section {
+                padding: 1.5rem;
+            }
+            .cta-section .tel-link {
+                font-size: 1rem;
+                padding: 0.6rem 1.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+            .logo a {
+                font-size: 1.1rem;
+            }
+            .pull-quote {
+                font-size: 1rem;
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">상수 가라오케 TOP5</a>
+            </div>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.classList.toggle('active'); document.querySelector('nav').classList.toggle('active');">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/list">TOP5</a>
+                <a href="/blog" style="color:#d4af37;">블로그</a>
+                <a href="/about">소개</a>
+                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <article>
+                <div class="article-hero">
+                    <div class="meta">
+                        <span>EDITORIAL</span>
+                        <span>2025.03.21</span>
+                        <span>6 MIN READ</span>
+                    </div>
+                    <h1>상수 가라오케, 그 화려함 뒤에 감춰진 본질</h1>
+                    <p style="font-size:1.2rem; color:#a0a0a0; font-style:italic;">"빛나는 네온사인 아래, 진짜를 찾는 자는 거침없이 걸어간다."</p>
+                </div>
+                <div class="article-body">
+                    <p class="drop-cap">상수역. 홍대의 연장선이지만, 뭔가 다르다. 여기는 '그냥 노래방'이 아니다. 네온사인이 번쩍이는 입구, 검은 유리문 너머로 흘러나오는 베이스 음악, 그리고 문을 열자마자 코를 찌르는 고급 향수 냄새. 이곳이 바로 상수 가라오케의 현장이다. 하지만 잠깐, 너는 진짜를 보고 있는가?</p>
+
+                    <p>나는 수많은 가라오케를 다녀봤다. 강남, 홍대, 신촌, 심지어 부산까지. 하지만 상수는 달랐다. 여긴 '가라오케'라는 이름 아래, 완전히 다른 세계가 펼쳐진다. 문제는 대부분의 사람들이 그 표면만 보고 판단한다는 거다. 화려한 조명, 고급스러운 인테리어, 예쁜 직원들 — 그래서 뭐? 그게 다가 아니다.</p>
+
+                    <p>진짜를 원한다면, 너는 이 질문에 답해야 한다. <strong>"이곳은 나에게 무엇을 주는가?"</strong> 단순히 술 취해 노래 부르는 곳? 아니면 무언가 더 깊은 경험을 원하는가? 나는 후자다. 그리고 이 블로그는 그런 너를 위해 쓴다.</p>
+
+                    <div class="pull-quote">
+                        "화려함은 가라오케의 껍질일 뿐이다. 진짜 맛은 그 속에 숨겨져 있다."
+                        <cite>— 상수 가라오케 TOP5 편집자</cite>
+                    </div>
+
+                    <h2>왜 상수인가?</h2>
+                    <p>홍대는 너무 시끄럽다. 강남은 너무 비싸다. 신촌은 너무 대학생스럽다. 상수는 그 중간을 정확히 찔렀다. <em>프리미엄 감성에 합리적인 가격</em>, 여기에 더해 '아는 사람만 아는' 분위기까지. 상수 가라오케는 마치 숨겨진 보석 같다. 하지만 모든 보석이 다이아몬드는 아니다. 가짜도 많다.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>🔑 핵심 포인트</strong></p>
+                        <p>상수 가라오케의 진짜 가치는 <strong>사운드 시스템</strong>과 <strong>프라이빗한 공간</strong>에 있다. 여기서는 그냥 노래방 기계로 떼우지 않는다. 전문 오디오 시스템, 조명 연출, 그리고 방음까지 — 이 모든 것이 하나의 '퍼포먼스'를 완성한다.</p>
+                    </div>
+
+                    <h2>TOP5를 선정한 기준</h2>
+                    <p>내가 상수 가라오케 TOP5를 선정할 때 가장 중요하게 본 것은 단 하나다. <strong>'본질'</strong>. 화려한 SNS 사진? 거짓말이다. 직원들의 친절함? 기본이다. 나는 더 깊이 봤다. 사운드의 선명도, 공간의 프라이버시, 음료의 퀄리티, 그리고 무엇보다 '그곳만의 분위기'. 이 네 가지가 모두 충족되는 곳만이 진짜다.</p>
+
+                    <p>너는 아마 이렇게 말할지도 모른다. "야, 가라오케가 뭐 대단하다고?" 하지만 나는 말한다. <strong>"가라오케는 단순한 놀이가 아니다. 그것은 하나의 문화다."</strong> 특히 상수에서는 더 그렇다. 여긴 예술과 유흥의 경계가 흐려지는 곳이다. 네가 진짜를 원한다면, 이 리스트를 봐라.</p>
+
+                    <h2>진짜를 찾는 자에게</h
+</body>
+</html>

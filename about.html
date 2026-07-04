@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상수 가라오케 TOP5 — 정보</title>
+    <meta name="description" content="상수 가라오케 TOP5, 화려한 조명 뒤에 감춰진 본질. 편집적 시선으로 파헤치는 단 하나의 리스트. 전화 010-6279-0862.">
+    <meta name="keywords" content="상수 가라오케, 상수 가라오케 TOP5, 상수 노래방, 홍대 가라오케, 상수역 가라오케, 프리미엄 가라오케, 상수 술집">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <link rel="canonical" href="https://t3b08-ss-karaoke-top5-1.vercel.app/info">
+    <meta property="og:title" content="상수 가라오케 TOP5 — 진짜를 원한다면">
+    <meta property="og:description" content="화려함에 속지 마라. 상수 가라오케의 본질을 원한다면 이 리스트를 봐라. 010-6279-0862">
+    <meta property="og:type" content="website">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; background: #0a0a0a; color: #d4d4d4; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; letter-spacing: -0.02em; color: #f5e6c8; }
+        h1 { font-size: 3.2rem; line-height: 1.2; margin-bottom: 1.2rem; }
+        h2 { font-size: 2.2rem; line-height: 1.3; margin-bottom: 1rem; border-left: 4px solid #c9a96e; padding-left: 1.2rem; }
+        h3 { font-size: 1.5rem; line-height: 1.4; margin-bottom: 0.8rem; }
+        p { margin-bottom: 1.2rem; font-size: 1.05rem; }
+        a { color: #c9a96e; text-decoration: none; border-bottom: 1px solid rgba(201, 169, 110, 0.3); transition: all 0.3s ease; }
+        a:hover { color: #e8d5a3; border-bottom-color: #e8d5a3; }
+        strong { color: #f5e6c8; font-weight: 700; }
+        em { color: #c9a96e; font-style: italic; }
+
+        .drop-cap::first-letter { font-size: 4rem; float: left; line-height: 1; margin-right: 0.5rem; color: #c9a96e; font-weight: 700; font-family: 'Georgia', serif; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+        header { padding: 1.5rem 0; border-bottom: 1px solid rgba(201, 169, 110, 0.15); position: relative; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.6rem; font-weight: 700; color: #f5e6c8; letter-spacing: 0.05em; border-bottom: none; }
+        .logo:hover { border-bottom: none; color: #e8d5a3; }
+
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; color: #a0a0a0; border-bottom: none; position: relative; padding-bottom: 0.3rem; }
+        nav a:hover { color: #f5e6c8; }
+        nav a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: #c9a96e; transition: width 0.3s; }
+        nav a:hover::after { width: 100%; }
+        .nav-cta { background: #c9a96e; color: #0a0a0a !important; padding: 0.5rem 1.2rem; border-radius: 2px; font-weight: 600; letter-spacing: 0.05em; }
+        .nav-cta:hover { background: #e8d5a3; color: #0a0a0a !important; }
+        .nav-cta::after { display: none; }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 5px; }
+        .hamburger span { width: 28px; height: 2px; background: #f5e6c8; transition: all 0.3s; border-radius: 1px; }
+
+        main { padding: 4rem 0; min-height: 70vh; }
+
+        .hero-section { padding: 3rem 0 2rem; border-bottom: 1px solid rgba(201, 169, 110, 0.1); margin-bottom: 3rem; }
+        .hero-section h1 { max-width: 900px; }
+        .hero-section .subtitle { font-size: 1.2rem; color: #a0a0a0; max-width: 700px; margin-bottom: 1.5rem; }
+        .hero-section .meta-info { display: flex; gap: 2rem; color: #666; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
+        .hero-section .meta-info span { display: flex; align-items: center; gap: 0.5rem; }
+
+        .section { margin-bottom: 4rem; }
+        .section p { max-width: 800px; }
+
+        .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin: 2rem 0; }
+        .info-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(201, 169, 110, 0.1); padding: 2rem; border-radius: 4px; transition: all 0.3s; }
+        .info-card:hover { border-color: rgba(201, 169, 110, 0.3); background: rgba(201, 169, 110, 0.03); }
+        .info-card h3 { font-size: 1.2rem; margin-bottom: 0.8rem; color: #f5e6c8; }
+        .info-card p { font-size: 0.95rem; color: #b0b0b0; margin-bottom: 0; }
+        .info-card .icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+
+        .contact-block { background: rgba(201, 169, 110, 0.05); border-left: 3px solid #c9a96e; padding: 2rem 2.5rem; margin: 2rem 0; }
+        .contact-block p { margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .contact-block .tel-highlight { font-size: 1.8rem; font-weight: 700; color: #f5e6c8; letter-spacing: 0.05em; }
+
+        .faq { margin-top: 3rem; }
+        .faq-item { border-bottom: 1px solid rgba(201, 169, 110, 0.1); padding: 1.5rem 0; }
+        .faq-item h3 { font-size: 1.1rem; cursor: default; margin-bottom: 0.5rem; color: #e0d0b0; }
+        .faq-item p { font-size: 0.95rem; color: #a0a0a0; margin-bottom: 0; padding-left: 0; }
+
+        footer { border-top: 1px solid rgba(201, 169, 110, 0.1); padding: 2.5rem 0; text-align: center; color: #666; font-size: 0.85rem; }
+        footer a { color: #888; border-bottom: none; }
+        footer a:hover { color: #c9a96e; }
+
+        .tel-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #c9a96e; font-weight: 600; border-bottom: none; }
+        .tel-link:hover { color: #e8d5a3; }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 1.2rem; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.6rem; }
+            .info-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .hero-section .meta-info { flex-direction: column; gap: 0.5rem; }
+            .contact-block { padding: 1.5rem; }
+            .contact-block .tel-highlight { font-size: 1.4rem; }
+
+            .hamburger { display: flex; }
+            nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #111; padding: 1.5rem; gap: 1rem; border-bottom: 1px solid rgba(201, 169, 110, 0.2); z-index: 100; }
+            nav.active { display: flex; }
+            nav a { font-size: 1rem; }
+            .nav-cta { text-align: center; }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">SANGSU KARAOKE</a>
+            <button class="hamburger" onclick="this.parentElement.querySelector('nav').classList.toggle('active')" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <a href="/">HOME</a>
+                <a href="/list">LIST</a>
+                <a href="/info" style="color:#f5e6c8;">INFO</a>
+                <a href="/contact">CONTACT</a>
+                <a href="tel:010-6279-0862" class="nav-cta">010-6279-0862</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero-section">
+                <h1>상수 가라오케 TOP5<br>그 정보의 본질</h1>
+                <p class="subtitle">화려한 간판 뒤에 숨은 진짜. 걸러낼 건 걸러내고, 남은 단 하나의 리스트. 상수에서 가장 중요한 정보만 남겼다.</p>
+                <div class="meta-info">
+                    <span>📍 상수동 · 홍대 인근</span>
+                    <span>📅 2025년 기준</span>
+                    <span>✏️ 편집부 선정</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>상수 가라오케 TOP5 — 이게 전부다</h2>
+                <p class="drop-cap">상수역 3번 출구에서 걸어서 3분. 홍대의 화려함은 뒤로하고, 진짜를 원하는 사람들이 모이는 곳이 있다. <strong>상수 가라오케 TOP5</strong>는 그런 곳이다. 편집자의 시선으로 직접 발로 뛰고, 걸러내고, 검증했다. 예쁜 조명에 속지 마라. 여기는 다르다.</p>
+                <p>프리미엄 라운지부터 언더그라운드 감성까지. 상수라는 지역이 가진 다층적 매력을 그대로 담았다. 각각의 공간은 저마다의 철학과 기준으로 운영된다. 그리고 그 기준을 충족한 곳만이 이 리스트에 이름을 올렸다.</p>
+            </section>
+
+            <section class="section">
+                <h2>지역이 말해주는 것</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="icon">📍</span>
+                        <h3>상수동 · 중심</h3>
+                        <p>홍대와 합정 사이, 상수라는 지역은 그 자체로 시그널이다. 번잡함을 피하면서도 접근성은 완벽하다. 상수 가라오케 TOP5는 이 지역의 정수를 보여준다.</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🎤</span>
+                        <h3>프리미엄 시스템</h3>
+                        <p>음향, 조명, 공간. 세 가지가 모두 충족되어야 한다. 기술적 스펙이 아닌, 실제 사용자 경험을 기준으로 평가했다. 여기는 다르다.</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🔒</span>
+                        <h3>프라이빗한 공간</h3>
+                        <p>각 방의 사운드프루프, 동선, 서비스의 디테일. 겉으로 보이는 것보다 중요한 것은 보이지 않는 부분이다. 편집자가 직접 확인했다.</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🍸</span>
+                        <h3>주류 & 케이터링</h3>
+                        <p>단순한 노래방이 아니다. 엄선된 위스키, 칵테일, 안주까지. 상수 가라오케 TOP5는 종합적인 경험을 제공하는 곳이다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>연락처 · 예약</h2>
+                <div class="contact-block">
+                    <p>상수 가라오케 TOP5에 대한 문의는 직접 전화로만 받는다.</p>
+                    <p class="tel-highlight"><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></p>
+                    <p style="margin-top: 0.8rem; font-size: 0.9rem; color: #888;">※ 예약 및 상담, 위치 안내 모두 이 번호로 가능하다.</p>
+                </div>
+                <p style="font-size: 0.95rem; color: #888;">* 운영 시간은 매일 오후 6시부터 익일 새벽 4시까지. 금요일과 토요일은 오전 6시까지 연장. 사전 예약 필수.</p>
+            </section>
+
+            <section class="section faq">
+                <h2>자주 묻는 정보</h2>
+                <div class="faq-item">
+                    <h3>상수 가라오케 TOP5는 어떤 기준으로 선정되었나?</h3>
+                    <p>음향, 프라이버시, 서비스, 분위기, 주류의 질. 다섯 가지 기준을 직접 평가했다. 모든 곳은 최소 3회 이상 방문 후 결정했다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>예약은 어떻게 하나?</h3>
+                    <p>전화 010-6279-0862로 직접 연락해야 한다. 온라인 예약은 받지 않는다. 예약 시 원하는 분위기와 인원을 말하면 맞춤 추천해준다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>가격대는 어떻게 되나?</h3>
+                    <p>프리미엄 공간이다. 합리적인 가격은 아니지만, 그만한 가치를 제공한다. 정확한 금액은 전화 문의 시 안내받을 수 있다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>주차가 가능한가?</h3>
+                    <p>상수동 특성상 주차 공간이 많지 않다. 대중교통을 권장하며, 발렛파킹 가능 여부는 전화로 확인할 수 있다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>이 리스트는 얼마나 자주 업데이트되나?</h3>
+                    <p>분기별로 재검증한다. 새로운 곳이 생기거나 기존 리스트의 퀄리티에 변동이 생기면 즉시 반영한다. 2025년
+</body>
+</html>
